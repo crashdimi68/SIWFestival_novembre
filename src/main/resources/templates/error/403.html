@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIW Festival - Accesso negato</title>
+    <link rel="stylesheet" th:href="@{/css/stile.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+    <section class="page-content">
+        <div class="empty-state">
+            <div class="empty-icon"></div>
+            <h1>403 &mdash; Accesso negato</h1>
+            <p>Non hai i permessi per vedere questa pagina o eseguire questa operazione.</p>
+            <div class="detail-actions">
+                <a th:href="@{/}" class="btn btn-primary">&larr; Torna alla Home</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
